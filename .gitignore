@@ -1,0 +1,7 @@
+# source images stay on the local Mac / backup
+assets-src/
+public/
+.DS_Store
+__pycache__/
+*.pyc
+.venv/

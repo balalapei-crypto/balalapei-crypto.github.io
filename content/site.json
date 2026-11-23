@@ -1,0 +1,1285 @@
+{
+ "site": {
+  "name": "Peipei",
+  "owner": "Chian-Pei Yang",
+  "title": "Peipei — Chian-Pei Yang",
+  "description": "Chian-Pei Yang (Peipei) is a visual artist and designer based in Taiwan, working across picture books, illustration, publications, exhibitions, and brand design.",
+  "email": "balalapei@gmail.com",
+  "instagram": "https://www.instagram.com/balalapei/",
+  "footer": "© Peipei Yang 2026"
+ },
+ "nav": [
+  {
+   "label": "ABOUT",
+   "href": "about/"
+  },
+  {
+   "label": "EMAIL",
+   "href": "mailto:balalapei@gmail.com"
+  },
+  {
+   "label": "INSTAGRAM",
+   "href": "https://www.instagram.com/balalapei/",
+   "external": true
+  }
+ ],
+ "home": {
+  "layout": [
+   {
+    "cols": [
+     12
+    ],
+    "aspect": "3/1",
+    "hero": true
+   },
+   {
+    "cols": [
+     6,
+     6
+    ],
+    "aspect": "4/3"
+   },
+   {
+    "cols": [
+     4,
+     8
+    ],
+    "aspect": "3/4",
+    "fill": true
+   },
+   {
+    "cols": [
+     8,
+     4
+    ],
+    "aspect": "1280/688",
+    "fill_span": 4
+   },
+   {
+    "cols": [
+     4,
+     4,
+     4
+    ],
+    "aspect": "4/3"
+   }
+  ],
+  "slots": [
+   "travelling-in-my-room",
+   "rune-cards",
+   "zaza",
+   "exhibition-visual-design",
+   "soul-breathing",
+   "migrant-voice-ui",
+   "chen-chou-foundation",
+   "microscopic-explorations",
+   "amnesty-calendar",
+   "one-forty-app"
+  ]
+ },
+ "about": {
+  "title": "About",
+  "photo": "about/portrait-sunset.jpg",
+  "tagline": [
+   "A little fluid.",
+   "A little me."
+  ],
+  "name": "Chian-Pei Yang",
+  "subtitle": "Visual artist and designer based in Taiwan",
+  "links": [
+   {
+    "label": "Email",
+    "href": "mailto:balalapei@gmail.com"
+   },
+   {
+    "label": "Behance",
+    "href": "https://www.behance.net/balalapei05a1",
+    "external": true
+   },
+   {
+    "label": "LinkedIn",
+    "href": "https://www.linkedin.com/in/chian-pei-yang-35a9b7264/",
+    "external": true
+   }
+  ],
+  "bio": [
+   "My work moves between two concerns: how art and design connect to social issues, and how we explore and heal ourselves.",
+   "For years I have made visual and social design for One-Forty, a nonprofit supporting Southeast Asian migrant workers in Taiwan, where I am Design Manager. In my own practice, I turn inward."
+  ],
+  "education": [
+   {
+    "title": "National Taiwan University of Arts",
+    "detail": "Master’s degree · Visual Communication Design · August 2019"
+   },
+   {
+    "title": "National Taichung University of Education",
+    "detail": "Bachelor’s degree · Digital Content and Technology · June 2016"
+   }
+  ],
+  "experience": [
+   {
+    "title": "Freelance Visual Designer · 2019 – Present",
+    "detail": "Clients and collaborators include ZAZA, Liang-shean Tang Social Welfare Foundation, Amnesty International Taiwan, and Kari (exhibition and book design)."
+   },
+   {
+    "title": "One-Forty · Design Manager",
+    "detail": ""
+   }
+  ],
+  "current_role": "Design Manager at One-Forty / Freelance Visual Designer",
+  "projects": [
+   {
+    "title": "Hey, Give Me a Hug · in progress",
+    "detail": "A personal picture book about my path toward reconciling with myself, and the challenges along it."
+   },
+   {
+    "title": "Soul Breathing + Love Stills · in progress",
+    "href": "soul-breathing/",
+    "detail": "Inspired by runes, I record what I become aware of while relaxing, and draw the moments I recognise as love."
+   },
+   {
+    "title": "City Breathing · in concept",
+    "detail": "Looking for faces and traces of movement in the city, to record its vitality."
+   }
+  ]
+ },
+ "projects": [
+  {
+   "slug": "travelling-in-my-room",
+   "ready": true,
+   "title": [
+    "Travelling",
+    "in My Room"
+   ],
+   "card_title": "Travelling in My Room",
+   "meta": "2021 · 30 books · 30 countries",
+   "intro": "Thirty books, one for each country, made from Kari's photographs and writing during a hundred days of isolation.",
+   "description": "Thirty books, one for each country, made from Kari's photographs and writing during a hundred days of isolation.",
+   "hero": {
+    "src": "travelling-new/series-overview-2.jpg",
+    "name": "series-overview",
+    "alt": "Several of the books laid out on a table"
+   },
+   "about_heading": [
+    "About",
+    "the project"
+   ],
+   "about": [
+    "During a hundred days of isolation in 2021, Kari revisited travel memories from thirty countries through daily meditation. She provided the photographs and texts. I developed how they could take physical form: a series of thirty books, one per country, laid out as one system.",
+    "For each cover I chose a photograph in response to her writing, drew a small symbol for the place from its imagery, and gave each book its own colour.",
+    "The first question was whether the stories of thirty countries should be one large book or a series, and if a series, how each book could vary within shared rules. For each country I read the story, studied the photographs, and drew a symbol picked from the imagery, with a colour to match, so that each cover echoes its story. I hoped readers could step inside Kari's mind and explore it freely."
+   ],
+   "role": [
+    [
+     "Role",
+     "Presentation concept, book design and layout, cover photo selection, country symbols"
+    ],
+    [
+     "Photographs and texts",
+     "Kari"
+    ]
+   ],
+   "blocks": [
+    {
+     "type": "wide",
+     "width": 81,
+     "mt": 32,
+     "images": [
+      {
+       "src": "travelling-in-my-room/raw_05.png",
+       "name": "nine-countries",
+       "alt": "Nine of the country books shown together"
+      }
+     ]
+    },
+    {
+     "type": "pair",
+     "mt": 56,
+     "images": [
+      {
+       "src": "travelling-in-my-room/raw_07.png",
+       "name": "usa-spread-p10-p11",
+       "alt": "Spread from the USA book, pages 10 and 11"
+      },
+      {
+       "src": "travelling-in-my-room/raw_08.png",
+       "name": "usa-spread-p18-p19",
+       "alt": "Spread from the USA book, pages 18 and 19"
+      }
+     ]
+    },
+    {
+     "type": "intro",
+     "heading": "In the exhibition",
+     "text": "The books were displayed flat on tables and shelves, for visitors to pick up and read."
+    },
+    {
+     "type": "pair",
+     "mt": 32,
+     "images": [
+      {
+       "src": "travelling-in-my-room/raw_03.jpg",
+       "name": "exhibition-1",
+       "alt": "Two visitors reading the books on the exhibition floor"
+      },
+      {
+       "src": "travelling-in-my-room/raw_06.jpg",
+       "name": "exhibition-2",
+       "alt": "Visitors seated around a table with the books"
+      }
+     ]
+    },
+    {
+     "type": "offset",
+     "width": 83,
+     "mt": 20,
+     "images": [
+      {
+       "src": "travelling-in-my-room/raw_09.jpg",
+       "name": "exhibition-3",
+       "alt": "Visitors seated in the exhibition space, with the books laid out on a table"
+      }
+     ]
+    }
+   ],
+   "credits": {
+    "left": [
+     [
+      "Concept, design, layout",
+      "Chian-Pei Yang"
+     ],
+     [
+      "Photographs and texts",
+      "Kari"
+     ]
+    ],
+    "right": [
+     [
+      "Year",
+      "2021"
+     ],
+     [
+      "Format",
+      "30 photographic books, one per country"
+     ],
+     [
+      "Exhibition photography",
+      "Kari"
+     ]
+    ]
+   },
+   "tag": "Art · Book design",
+   "hero_covers": true
+  },
+  {
+   "slug": "zaza",
+   "ready": true,
+   "title": [
+    "ZAZA",
+    "Photobook"
+   ],
+   "card_title": "ZAZA Photobook",
+   "tag": "Design",
+   "meta": "2019 · Photobook · Book design",
+   "intro": "An interactive photobook about photography empowerment in rural Cambodia, bringing children's photographs and illustrations into a playful reading experience.",
+   "description": "ZAZA Photobook (2019): an interactive photobook bringing children's photographs and illustrations from rural Cambodia into a playful reading experience.",
+   "hero": {
+    "src": "zaza/01-cover.jpg",
+    "name": "01-cover",
+    "alt": "Cover of the ZAZA photobook",
+    "width": 78
+   },
+   "cover": {
+    "src": "zaza/cover-screenshot.png",
+    "name": "cover-screenshot",
+    "alt": "Children in rural Cambodia looking up at a camera, with the ZAZA logo"
+   },
+   "about_heading": [
+    "About",
+    "the book"
+   ],
+   "about": [
+    "ZAZA runs photography education with children in rural Cambodia. This book gathers the children's photographs and illustrations, and invites readers to discover their perspectives through play.",
+    "Every spread includes a small game. Readers can follow the book in order or open it anywhere, and the children's drawings are woven into the layout. The front and back covers are printed on pearl paper."
+   ],
+   "role": [
+    [
+     "Role",
+     "Book design, layout, collaborative concept development; the games are designed into each spread"
+    ],
+    [
+     "Photographs and texts",
+     "ZAZA team"
+    ]
+   ],
+   "blocks": [
+    {
+     "type": "wide",
+     "width": 81,
+     "mt": 32,
+     "images": [
+      {
+       "src": "zaza/02-overview.jpg",
+       "name": "02-overview",
+       "alt": "Overview of the photobook's spreads"
+      }
+     ]
+    },
+    {
+     "type": "intro",
+     "heading": "Reading through play",
+     "text": "In one spread, readers cut along a dotted line and give a photograph to someone they like. In another, they are asked to draw their most treasured thing."
+    },
+    {
+     "type": "pair",
+     "mt": 32,
+     "images": [
+      {
+       "src": "zaza/03-photo-game.jpg",
+       "name": "03-photo-game",
+       "alt": "Spread with a photo game"
+      },
+      {
+       "src": "zaza/04-team-spreads.jpg",
+       "name": "04-team-spreads",
+       "alt": "Spreads made with the ZAZA team"
+      }
+     ]
+    },
+    {
+     "type": "offset",
+     "width": 83,
+     "mt": 56,
+     "images": [
+      {
+       "src": "zaza/05-drawing-activity.jpg",
+       "name": "05-drawing-activity",
+       "alt": "Spread with a drawing activity"
+      }
+     ]
+    },
+    {
+     "type": "wide",
+     "width": 81,
+     "mt": 56,
+     "images": [
+      {
+       "src": "zaza/06-names-spread.jpg",
+       "name": "06-names-spread",
+       "alt": "Spread with the children's names"
+      }
+     ]
+    },
+    {
+     "type": "wide",
+     "width": 81,
+     "mt": 56,
+     "images": [
+      {
+       "src": "zaza/07-covers.jpg",
+       "name": "07-covers",
+       "alt": "The front and back covers"
+      }
+     ]
+    }
+   ],
+   "credits": {
+    "left": [
+     [
+      "Book design and layout",
+      "Chian-Pei Yang"
+     ],
+     [
+      "Illustration",
+      "Chian-Pei Yang and the children"
+     ],
+     [
+      "Concept development",
+      "with the ZAZA team"
+     ]
+    ],
+    "right": [
+     [
+      "Photographs and texts",
+      "ZAZA team"
+     ],
+     [
+      "Photographs and illustrations",
+      "the participating children"
+     ],
+     [
+      "Year",
+      "2019"
+     ]
+    ]
+   }
+  },
+  {
+   "slug": "soul-breathing",
+   "ready": true,
+   "title": [
+    "Soul",
+    "Breathing"
+   ],
+   "card_title": "Soul Breathing",
+   "tag": "Art",
+   "status": "Work in progress",
+   "meta": "A Guide to Finding Ease · 2024 – present",
+   "intro": "An ongoing personal project of illustrations and short lines about slowing down, shared on Instagram as Soul Breathing.",
+   "description": "Soul Breathing (A Guide to Finding Ease, 2024 – present): an ongoing personal project of illustrations and short lines about slowing down.",
+   "hero": {
+    "src": "soul-breathing/hero-image.jpg",
+    "name": "hero-image",
+    "alt": "Soul Breathing lettering over a painted landscape of grass and sky",
+    "crop": "1184 / 403"
+   },
+   "cover": {
+    "src": "soul-breathing/hero-image.jpg",
+    "name": "hero-image",
+    "alt": "Soul Breathing lettering over a painted landscape of grass and sky"
+   },
+   "about_heading": [
+    "About",
+    "the project"
+   ],
+   "about": [
+    "Soul Breathing, also titled A Guide to Finding Ease, is a personal project I began in 2024 and am still developing. It gathers my own explorations of how to slow down: each piece pairs an illustration with a short line and the name of a rune.",
+    "The pieces are shared on Instagram as they are made, so this page is a selection from work in progress, not a finished book."
+   ],
+   "role": [
+    [
+     "Role",
+     "Illustration, lettering, writing, design"
+    ],
+    [
+     "Status",
+     "In progress, since 2024"
+    ]
+   ],
+   "blocks": [
+    {
+     "type": "pair",
+     "mt": 56,
+     "images": [
+      {
+       "src": "soul-breathing/jera.jpg",
+       "name": "jera",
+       "alt": "Soul Breathing piece: Jera"
+      },
+      {
+       "src": "soul-breathing/moon.jpg",
+       "name": "moon",
+       "alt": "Soul Breathing piece: Moon"
+      }
+     ]
+    },
+    {
+     "type": "pair",
+     "mt": 20,
+     "images": [
+      {
+       "src": "soul-breathing/ehwaz.jpg",
+       "name": "ehwaz",
+       "alt": "Soul Breathing piece: Ehwaz"
+      },
+      {
+       "src": "soul-breathing/tiwaz.jpg",
+       "name": "tiwaz",
+       "alt": "Soul Breathing piece: Tiwaz"
+      }
+     ]
+    }
+   ],
+   "credits": {
+    "left": [
+     [
+      "Illustration, lettering, writing, design",
+      "Chian-Pei Yang"
+     ]
+    ],
+    "right": [
+     [
+      "Started",
+      "2024, ongoing"
+     ],
+     [
+      "Shared on",
+      "Instagram, @soulbreathing_tw"
+     ]
+    ]
+   }
+  },
+  {
+   "slug": "microscopic-explorations",
+   "ready": true,
+   "title": [
+    "Microscopic",
+    "Explorations"
+   ],
+   "title_size": "sm",
+   "card_title": "Microscopic Explorations",
+   "tag": "Art",
+   "meta": "Photography · Drawing · Experimental series",
+   "intro": "An experimental series combining close-up photographs taken through a microscope lens with drawn lines, exploring the relationship between what I observe and what I feel.",
+   "description": "Microscopic Explorations: an experimental series of close-up photographs taken through a microscope lens, combined with drawn lines.",
+   "cover": {
+    "src": "microscopic-explorations/micro-01.jpg",
+    "name": "micro-01",
+    "alt": "Microscope photograph with drawn lines, composition 1"
+   },
+   "about_heading": [
+    "About",
+    "the series"
+   ],
+   "about": [
+    "I photograph objects through a microscope lens attached to a phone, then use lines to record my impressions of each image. The lines are drawn digitally, in Procreate and Illustrator.",
+    "Each piece is an experiment in how looking closely changes what a familiar thing feels like."
+   ],
+   "role": [
+    [
+     "Role",
+     "Photography, drawing"
+    ],
+    [
+     "Tools",
+     "Phone with microscope lens, Procreate, Illustrator"
+    ]
+   ],
+   "blocks": [
+    {
+     "type": "row",
+     "mt": 0,
+     "images": [
+      {
+       "src": "microscopic-explorations/micro-01.jpg",
+       "name": "micro-01",
+       "alt": "Microscope photograph with drawn lines, composition 1"
+      },
+      {
+       "src": "microscopic-explorations/micro-02.jpg",
+       "name": "micro-02",
+       "alt": "Microscope photograph with drawn lines, composition 2"
+      }
+     ]
+    },
+    {
+     "type": "info"
+    },
+    {
+     "type": "row",
+     "mt": 56,
+     "images": [
+      {
+       "src": "microscopic-explorations/micro-03.jpg",
+       "name": "micro-03",
+       "alt": "Microscope photograph with drawn lines, composition 3"
+      },
+      {
+       "src": "microscopic-explorations/micro-04.jpg",
+       "name": "micro-04",
+       "alt": "Microscope photograph with drawn lines, composition 4"
+      }
+     ]
+    },
+    {
+     "type": "intro",
+     "heading": "Details",
+     "text": "Crops from three of the compositions, to show the line work up close."
+    },
+    {
+     "type": "row",
+     "mt": 32,
+     "images": [
+      {
+       "src": "microscopic-explorations/detail-01.jpg",
+       "name": "detail-01",
+       "alt": "Detail of composition 1"
+      },
+      {
+       "src": "microscopic-explorations/detail-02.jpg",
+       "name": "detail-02",
+       "alt": "Detail of composition 3"
+      },
+      {
+       "src": "microscopic-explorations/detail-03.jpg",
+       "name": "detail-03",
+       "alt": "Detail of composition 4"
+      }
+     ]
+    }
+   ],
+   "credits": {
+    "left": [
+     [
+      "Photography and drawing",
+      "Chian-Pei Yang"
+     ]
+    ],
+    "right": [
+     [
+      "Medium",
+      "Microscope-lens photography, digital drawing"
+     ],
+     [
+      "Format",
+      "Digital works"
+     ]
+    ]
+   }
+  },
+  {
+   "slug": "chen-chou-foundation",
+   "ready": true,
+   "title": [
+    "Chen Chou",
+    "Foundation"
+   ],
+   "card_title": "Chen Chou Foundation",
+   "tag": "Design",
+   "meta": "Identity · Annual report",
+   "intro": "Identity and annual report design for a social welfare foundation that supports children and young people.",
+   "description": "Chen Chou Foundation: identity and annual report design for a social welfare foundation that supports children and young people.",
+   "cover": {
+    "src": "chen-chou-foundation/img-cover-front.jpg",
+    "name": "cover-front",
+    "alt": "Front cover of the 2024 annual report"
+   },
+   "about_heading": [
+    "About",
+    "the project"
+   ],
+   "about": [
+    "I designed visual materials for the Liang-shean Tang Social Welfare Foundation, which works with children and young people and is known through its Chen Chou identity: the identity system, an annual report and merchandise.",
+    "The foundation supplied the content, and I was responsible for the design."
+   ],
+   "role": [
+    [
+     "Role",
+     "Identity system, annual report layout, merchandise"
+    ],
+    [
+     "Client",
+     "Liang-shean Tang Social Welfare Foundation"
+    ]
+   ],
+   "blocks": [
+    {
+     "type": "wide",
+     "width": 81,
+     "mt": 0,
+     "images": [
+      {
+       "src": "chen-chou-foundation/annual-cover.jpg",
+       "name": "annual-cover",
+       "alt": "Cover of the foundation's 2024 annual report"
+      }
+     ]
+    },
+    {
+     "type": "info"
+    },
+    {
+     "type": "intro",
+     "heading": "2024 Annual Report",
+     "text": "Published in 2025. I was responsible for the layout."
+    },
+    {
+     "type": "mock",
+     "mt": 32,
+     "images": [
+      {
+       "src": "chen-chou-foundation/img-cover-front.jpg",
+       "name": "img-cover-front",
+       "alt": "Front cover of the annual report",
+       "w": 26.1
+      },
+      {
+       "src": "chen-chou-foundation/img-open-spread.jpg",
+       "name": "img-open-spread",
+       "alt": "Open spread of the annual report",
+       "w": 54.1
+      }
+     ]
+    },
+    {
+     "type": "wide",
+     "width": 100,
+     "mt": 20,
+     "images": [
+      {
+       "src": "chen-chou-foundation/annual-spread-14.jpg",
+       "name": "annual-spread-14",
+       "alt": "Annual report spread, pages 14 and 15"
+      }
+     ]
+    },
+    {
+     "type": "row",
+     "mt": 20,
+     "images": [
+      {
+       "src": "chen-chou-foundation/annual-spread-18.jpg",
+       "name": "annual-spread-18",
+       "alt": "Annual report spread, pages 18 and 19"
+      },
+      {
+       "src": "chen-chou-foundation/annual-spread-24.jpg",
+       "name": "annual-spread-24",
+       "alt": "Annual report spread, pages 24 and 25"
+      }
+     ]
+    },
+    {
+     "type": "row",
+     "mt": 20,
+     "images": [
+      {
+       "src": "chen-chou-foundation/annual-spread-26.jpg",
+       "name": "annual-spread-26",
+       "alt": "Annual report spread, pages 26 and 27"
+      },
+      {
+       "src": "chen-chou-foundation/annual-spread-28.jpg",
+       "name": "annual-spread-28",
+       "alt": "Annual report spread, pages 28 and 29"
+      }
+     ]
+    }
+   ],
+   "credits": {
+    "left": [
+     [
+      "Identity system, annual report, merchandise",
+      "Chian-Pei Yang"
+     ]
+    ],
+    "right": [
+     [
+      "Client",
+      "Liang-shean Tang Social Welfare Foundation"
+     ],
+     [
+      "Annual report",
+      "2024 Annual Report, published 2025"
+     ]
+    ]
+   },
+   "_removed_blocks": [
+    {
+     "type": "intro",
+     "heading": "Identity",
+     "text": "The foundation’s mark and wordmark — a grandmother embracing two children, in yellow, orange and green — and the logos of its three sub-brands."
+    },
+    {
+     "type": "panel",
+     "mt": 32,
+     "image": {
+      "src": "chen-chou-foundation/logo-foundation.png",
+      "name": "logo-foundation",
+      "alt": "The foundation's mark and wordmark"
+     }
+    },
+    {
+     "type": "swatches",
+     "mt": 56,
+     "items": [
+      {
+       "name": "Yellow",
+       "hex": "#fcc919"
+      },
+      {
+       "name": "Orange",
+       "hex": "#f18d00"
+      },
+      {
+       "name": "Green",
+       "hex": "#6eb92b"
+      },
+      {
+       "name": "Grey",
+       "hex": "#b5b6b6"
+      }
+     ]
+    }
+   ],
+   "cover_padded": "#ece9e1"
+  },
+  {
+   "slug": "exhibition-visual-design",
+   "ready": true,
+   "title": [
+    "Exhibition",
+    "Visual Design"
+   ],
+   "title_size": "md",
+   "card_title": "Exhibition Visual Design",
+   "tag": "Design",
+   "meta": "2021 · Posters · Wall graphics · Game boards",
+   "intro": "Posters, wall graphics, game boards and fortune slips for a photography exhibition about a hundred days of isolation at home.",
+   "description": "Exhibition Visual Design (2021): posters, wall graphics, game boards and fortune slips for a photography exhibition about a hundred days of isolation at home.",
+   "cover": {
+    "src": "exhibition-visual-design/poster-swim.jpg",
+    "name": "poster-swim",
+    "alt": "Exhibition poster: a swimmer in a cup of tea"
+   },
+   "about_heading": [
+    "About",
+    "the project"
+   ],
+   "about": [
+    "Kari’s exhibition grew out of a hundred days of isolation in 2021, when she revisited travel memories every day. I designed its visual language: the posters, the wall graphics, the game boards that guide visitors, and a set of fortune slips.",
+    "The posters turn a room into somewhere to travel: a swimmer in a cup of tea, a climber hanging from a line that leads to a bed. Five game boards invite visitors to look at photographs in different ways, and the fortune slips, 生活冒險實驗籤詩, offer small experiments for everyday life."
+   ],
+   "role": [
+    [
+     "Role",
+     "Poster and wall graphics, game boards, fortune slips"
+    ],
+    [
+     "Exhibition",
+     "Kari, 2021"
+    ]
+   ],
+   "blocks": [
+    {
+     "type": "row",
+     "mt": 0,
+     "images": [
+      {
+       "src": "exhibition-visual-design/poster-swim.jpg",
+       "name": "poster-swim",
+       "alt": "Exhibition poster: a swimmer in a cup of tea"
+      },
+      {
+       "src": "exhibition-visual-design/poster-hang.jpg",
+       "name": "poster-hang",
+       "alt": "Exhibition poster: a climber hanging from a line that leads to a bed"
+      }
+     ]
+    },
+    {
+     "type": "info"
+    },
+    {
+     "type": "intro",
+     "heading": "Wall graphics"
+    },
+    {
+     "type": "wide",
+     "width": 100,
+     "mt": 32,
+     "images": [
+      {
+       "src": "exhibition-visual-design/wall-wide.jpg",
+       "name": "wall-wide",
+       "alt": "Wall graphics in the exhibition space"
+      }
+     ]
+    },
+    {
+     "type": "wide",
+     "width": 64,
+     "mt": 56,
+     "images": [
+      {
+       "src": "exhibition-visual-design/wall-tall.jpg",
+       "name": "wall-tall",
+       "alt": "A tall wall graphic in the exhibition"
+      }
+     ]
+    },
+    {
+     "type": "intro",
+     "heading": "Game boards"
+    },
+    {
+     "type": "row",
+     "mt": 32,
+     "images": [
+      {
+       "src": "exhibition-visual-design/board-01.jpg",
+       "name": "board-01",
+       "alt": "Game board 1"
+      },
+      {
+       "src": "exhibition-visual-design/board-03.jpg",
+       "name": "board-03",
+       "alt": "Game board 3"
+      },
+      {
+       "src": "exhibition-visual-design/board-explain.jpg",
+       "name": "board-explain",
+       "alt": "Game board with instructions"
+      }
+     ]
+    },
+    {
+     "type": "intro",
+     "heading": "Fortune slips"
+    },
+    {
+     "type": "row",
+     "mt": 32,
+     "images": [
+      {
+       "src": "exhibition-visual-design/slip-1.jpg",
+       "name": "slip-1",
+       "alt": "Fortune slip 1"
+      },
+      {
+       "src": "exhibition-visual-design/slip-2.jpg",
+       "name": "slip-2",
+       "alt": "Fortune slip 2"
+      },
+      {
+       "src": "exhibition-visual-design/slip-3.jpg",
+       "name": "slip-3",
+       "alt": "Fortune slip 3"
+      },
+      {
+       "src": "exhibition-visual-design/slip-4.jpg",
+       "name": "slip-4",
+       "alt": "Fortune slip 4"
+      },
+      {
+       "src": "exhibition-visual-design/slip-5.jpg",
+       "name": "slip-5",
+       "alt": "Fortune slip 5"
+      }
+     ]
+    }
+   ],
+   "credits": {
+    "left": [
+     [
+      "Visual design",
+      "Chian-Pei Yang"
+     ]
+    ],
+    "right": [
+     [
+      "Exhibition",
+      "Kari"
+     ],
+     [
+      "Year",
+      "2021"
+     ]
+    ]
+   }
+  },
+  {
+   "slug": "rune-cards",
+   "ready": true,
+   "title": [
+    "Rune Healing",
+    "Cards"
+   ],
+   "card_title": "Rune Healing Cards",
+   "tag": "Art · Illustration",
+   "meta": "Illustration · Card design",
+   "intro": "A 33-card deck that brings Nordic runes together with the seven chakras, designed with divination teacher Miranda.",
+   "description": "Rune Healing Cards: a 33-card deck combining Nordic runes and the seven chakras, with a unicorn's adventure in a Nordic forest as its story. Illustration and card design by Chian-Pei Yang, with divination teacher Miranda.",
+   "about_heading": [
+    "About",
+    "the deck"
+   ],
+   "about": [
+    "Rune Healing Cards is a deck that combines Nordic runes with the seven chakras. I designed it together with divination teacher Miranda; there are 33 cards in total.",
+    "The deck is built around the adventure of a unicorn in a Nordic forest. Each card carries a healing line written by Miranda, paired with an illustration of the meaning it stands for.",
+    "We wanted anyone to be able to use it without divination experience: ask for advice when you feel lost, or draw one card each day and carry it with you. Through simple guidance, we hope people find a little inspiration and calm in everyday life."
+   ],
+   "role": [
+    [
+     "Role",
+     "Illustration, card design"
+    ]
+   ],
+   "blocks": [
+    {
+     "type": "stack",
+     "mt": 0,
+     "cards": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10
+     ]
+    },
+    {
+     "type": "wide",
+     "width": 100,
+     "mt": 32,
+     "images": [
+      {
+       "src": "rune-cards/hero-composite.jpg",
+       "name": "hero-composite",
+       "alt": "The Rune Healing Cards box at an angle, surrounded by cards laid out on a green surface"
+      }
+     ]
+    },
+    {
+     "type": "info"
+    },
+    {
+     "type": "cardgrid",
+     "mt": 56,
+     "cards": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11,
+      15,
+      20,
+      22,
+      25,
+      26
+     ]
+    }
+   ],
+   "credits": {
+    "left": [
+     [
+      "Illustration, card design",
+      "Chian-Pei Yang"
+     ],
+     [
+      "Card text",
+      "沐月之嶼 林珮緹 Miranda"
+     ]
+    ],
+    "right": [
+     [
+      "Format",
+      "Illustrated rune card deck, box and cloth pouch"
+     ]
+    ]
+   },
+   "cover": {
+    "src": "rune-cards/box-peach.jpg",
+    "name": "box-peach",
+    "alt": "Rune Healing Cards laid out in three rows"
+   },
+   "cover_comp": {
+    "kind": "grid",
+    "aspect": "4/3",
+    "bg": "#d8d8dc",
+    "cards": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     9,
+     10,
+     11,
+     15,
+     20,
+     22,
+     25,
+     26
+    ],
+    "cols": 5,
+    "w": 19,
+    "gx": 2.2,
+    "gy": 2.2,
+    "alt": "Rune Healing Cards laid out in three rows"
+   }
+  },
+  {
+   "slug": "cloth-book",
+   "ready": false,
+   "card_title": "Cloth Book",
+   "meta": "Working title",
+   "tag": "Art"
+  },
+  {
+   "slug": "amnesty-calendar",
+   "ready": true,
+   "title": [
+    "Amnesty International Taiwan",
+    "2025 Desk Calendar"
+   ],
+   "card_title": "Amnesty International Taiwan",
+   "tag": "Design",
+   "meta": "2024 · Desk calendar · Donor appreciation gift",
+   "intro": "A 2025 desk calendar made as a thank-you gift for supporters of Amnesty International Taiwan, built on the organisation's signature yellow and a month-by-month selection of human-rights photography.",
+   "description": "Amnesty International Taiwan 2025 desk calendar: a donor appreciation gift in the organisation's yellow, pairing each month with human-rights photography.",
+   "hero": {
+    "src": "amnesty-calendar/01-cover.jpg",
+    "name": "01-cover",
+    "alt": "The 2025 desk calendar standing on a wooden table, its cover a radiating yellow sunburst of fine lines",
+    "width": 72
+   },
+   "cover": {
+    "src": "amnesty-calendar/01-cover.jpg",
+    "name": "01-cover",
+    "alt": "Amnesty International Taiwan 2025 desk calendar with a yellow sunburst cover"
+   },
+   "about_heading": [
+    "About",
+    "the calendar"
+   ],
+   "about": [
+    "Amnesty International Taiwan sends a desk calendar to its supporters each year. The 2025 edition opens with a thank-you note and a sunburst of fine yellow lines, a light radiating from the centre.",
+    "Each month pairs a photograph with a short caption. The layout keeps Amnesty's yellow and black, leaving the dates and the photographs to carry the page."
+   ],
+   "blocks": [
+    {
+     "type": "pair",
+     "mt": 32,
+     "images": [
+      {
+       "src": "amnesty-calendar/02-february.jpg",
+       "name": "02-february",
+       "alt": "February page of the calendar with a yellow arch shape above a marathon photograph"
+      },
+      {
+       "src": "amnesty-calendar/03-october.jpg",
+       "name": "03-october",
+       "alt": "October page of the calendar with a photograph of two people embracing at a Pride march"
+      }
+     ]
+    },
+    {
+     "type": "intro",
+     "heading": "A photograph for every month",
+     "text": "February marks the marathon Amnesty Taiwan held for refugees. October celebrates Taiwan's marriage equality, with a photograph from the Pride march in Buenos Aires."
+    }
+   ],
+   "credits": {
+    "left": [
+     [
+      "Design and layout",
+      "Chian-Pei Yang"
+     ],
+     [
+      "Client",
+      "Amnesty International Taiwan"
+     ]
+    ],
+    "right": [
+     [
+      "Photographs",
+      "© Amnesty International Taiwan; © Tomás Ramírez Labrousse / Amnesty International"
+     ],
+     [
+      "Year",
+      "2024 (for the 2025 calendar year)"
+     ]
+    ]
+   }
+  },
+  {
+   "slug": "migrant-voice-ui",
+   "ready": true,
+   "dark": true,
+   "title": [
+    "One-Forty",
+    "Voice of",
+    "Migrant Web"
+   ],
+   "title_size": "sm",
+   "card_title": "One-Forty Voice of Migrant Web",
+   "tag": "Design · Digital",
+   "meta": "UI/UX design · Animation design · Project management",
+   "intro": "A photography website for the One-Forty migrant photography awards, originally called Voice of Migrants. Design and motion for a gallery that opens like a camera shutter.",
+   "description": "One-Forty Voice of Migrant Web: UI and motion design for a migrant photography awards website, with a shutter-style entrance animation, a scrolling photo wall and a mobile version.",
+   "about_heading": [
+    "About",
+    "the site"
+   ],
+   "about": [
+    "The website presents the photography of the awards online. It opens with a camera-shutter animation, then moves into a home page and a photo wall of the entries that scrolls like a contact sheet.",
+    "The concept was developed together with the team, and the copy was written by partners. I designed the interface and all of the animation, and managed the project. The site was originally called Voice of Migrants; the awards were renamed this year."
+   ],
+   "role": [
+    [
+     "Role",
+     "UI/UX design, animation design, project management"
+    ]
+   ],
+   "blocks": [
+    {
+     "type": "video",
+     "mt": 0,
+     "bleed": true,
+     "src": "migrant-voice/entrance.mp4",
+     "poster": "migrant-voice/entrance.jpg",
+     "aspect": "1280 / 688",
+     "label": "Entrance animation: a camera shutter opens onto the site"
+    },
+    {
+     "type": "devices",
+     "mt": 56,
+     "laptop": {
+      "src": "migrant-voice/home.mp4",
+      "poster": "migrant-voice/home.jpg",
+      "aspect": "1280 / 688",
+      "label": "Desktop: the home page"
+     },
+     "phone": {
+      "src": "migrant-voice/mobile.mp4",
+      "poster": "migrant-voice/mobile.jpg",
+      "aspect": "536 / 960",
+      "label": "Mobile version"
+     }
+    },
+    {
+     "type": "video",
+     "mt": 56,
+     "src": "migrant-voice/wall.mp4",
+     "poster": "migrant-voice/wall.jpg",
+     "aspect": "1280 / 688",
+     "label": "The photo wall"
+    },
+    {
+     "type": "info"
+    }
+   ],
+   "credits": {
+    "left": [
+     [
+      "UI/UX Design, Animation Design, Project Management",
+      "Chian-Pei Yang"
+     ],
+     [
+      "Photographs",
+      "One-Forty; winners of the photography open call"
+     ]
+    ],
+    "right": [
+     [
+      "Project",
+      "Carried out while working at One-Forty"
+     ]
+    ]
+   },
+   "cover_video": {
+    "src": "migrant-voice/wall-loop.mp4",
+    "poster": "migrant-voice/wall-loop.jpg",
+    "alt": "The photo wall of the website scrolling"
+   }
+  },
+  {
+   "slug": "one-forty-app",
+   "ready": false,
+   "card_title": "One-Forty App",
+   "meta": "App UI",
+   "tag": "Design · Digital"
+  }
+ ]
+}
