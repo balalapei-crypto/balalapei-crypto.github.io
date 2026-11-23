@@ -51,6 +51,8 @@ def make_image(src_rel, slug, name):
     alpha = name in NEEDS_ALPHA and src.lower().endswith(".png") and "hasAlpha: yes" in run(["sips", "-g", "hasAlpha", src])
     ext = "png" if alpha else "jpg"
     widths = sorted(set([x for x in WIDTHS if x < w] + [min(w, WIDTHS[-1])]))
+    # drop a variant that is almost the same size as the next one up (e.g. 1600 next to 1680)
+    widths = [x for i, x in enumerate(widths) if i == len(widths) - 1 or widths[i + 1] > x * 1.2]
     out_dir = os.path.join(PUBLIC, "assets", slug)
     os.makedirs(out_dir, exist_ok=True)
     files = []
@@ -58,7 +60,7 @@ def make_image(src_rel, slug, name):
         fname = "%s-%d.%s" % (name, tw, ext)
         out = os.path.join(out_dir, fname)
         if not os.path.exists(out) or os.path.getmtime(out) < os.path.getmtime(src):
-            cmd = ["sips", "-s", "format", "png"] if alpha else ["sips", "-s", "format", "jpeg", "-s", "formatOptions", "74" if tw >= 2000 else "80"]
+            cmd = ["sips", "-s", "format", "png"] if alpha else ["sips", "-s", "format", "jpeg", "-s", "formatOptions", "70" if tw >= 2000 else ("74" if tw >= 1200 else "80")]
             if tw != w:
                 cmd += ["--resampleWidth", str(tw)]
             run(cmd + [src, "--out", out])
@@ -88,7 +90,11 @@ def prepare_brand():
     os.makedirs(out_dir, exist_ok=True)
     gif = os.path.join(out_dir, "pe.gif")
     src_gif = os.path.join(LOGO_DIR, "pei_logo_face_final.gif")
-    if not os.path.exists(gif) or os.path.getmtime(gif) < max(os.path.getmtime(src_gif), os.path.getmtime(os.path.join(ROOT, "tools", "patch_gif.py"))):
+    small = os.path.join(ROOT, "assets-src", "brand", "pe-small.gif")  # 176 px, recoloured and re-encoded: 0.3 MB instead of 1.7 MB
+    if os.path.exists(small):
+        if not os.path.exists(gif) or os.path.getmtime(gif) < os.path.getmtime(small):
+            shutil.copyfile(small, gif)
+    elif not os.path.exists(gif) or os.path.getmtime(gif) < max(os.path.getmtime(src_gif), os.path.getmtime(os.path.join(ROOT, "tools", "patch_gif.py"))):
         run([sys.executable, "-I", os.path.join(ROOT, "tools", "patch_gif.py"), src_gif, gif])
     still = os.path.join(out_dir, "pe-still.png")
     if not os.path.exists(still):
