@@ -459,9 +459,9 @@ class Site:
                 body += '<section class="block swatches" style="margin-top:%dpx">%s</section>' % (blk.get("mt", 56), sw)
             elif t == "mock":
                 ims = "".join('<span class="mock-im" style="width:%s%%">%s</span>' % (
-                    im["w"], self.img_tag(slug, make_image(im["src"], slug, im["name"]), im["alt"], "(min-width: 900px) 640px, 60vw")) for im in blk["images"])
-                body += '<section class="block mock" style="margin-top:%dpx"><div class="mock-box" style="background:%s">%s</div></section>' % (
-                    blk.get("mt", 32), blk.get("bg", "#eceae0"), ims)
+                    im["w"], self.img_tag(slug, make_image(im["src"], slug, im["name"]), im["alt"], blk.get("sizes", "(min-width: 900px) 640px, 60vw"))) for im in blk["images"])
+                body += '<section class="block mock" style="margin-top:%dpx"><div class="mock-box%s" style="background:%s;--ar:%s;--gap:%s%%">%s</div></section>' % (
+                    blk.get("mt", 32), " shadow" if blk.get("shadow") else "", blk.get("bg", "#eceae0"), blk.get("aspect", "1184 / 640"), blk.get("gap", 6.1), ims)
             elif blk.get("comp"):
                 body += '<section class="block wide" style="margin-top:%dpx"><figure style="width:%s%%">%s</figure></section>' % (
                     blk.get("mt", 32), blk.get("width", 81), self.comp_html(slug, blk["comp"]))

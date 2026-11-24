@@ -842,23 +842,42 @@
    ],
    "blocks": [
     {
-     "type": "row",
+     "type": "mock",
      "mt": 0,
+     "bg": "#b3d3e2",
+     "aspect": "1184 / 780",
+     "gap": 4,
+     "shadow": true,
      "images": [
       {
-       "src": "exhibition-visual-design/poster-swim.jpg",
-       "name": "poster-swim",
-       "alt": "Exhibition poster: a swimmer in a cup of tea"
+       "src": "exhibition-visual-design/poster-swim-info.jpg",
+       "name": "poster-swim-info",
+       "alt": "Exhibition poster: a swimmer in a cup of tea, with exhibition details",
+       "w": 33
       },
       {
-       "src": "exhibition-visual-design/poster-hang.jpg",
-       "name": "poster-hang",
-       "alt": "Exhibition poster: a climber hanging from a line that leads to a bed"
+       "src": "exhibition-visual-design/poster-hang-info.jpg",
+       "name": "poster-hang-info",
+       "alt": "Exhibition poster: a climber hanging from a line that leads to a bed, with exhibition details",
+       "w": 33
       }
-     ]
+     ],
+     "sizes": "(min-width: 900px) 420px, 40vw"
     },
     {
      "type": "info"
+    },
+    {
+     "type": "wide",
+     "width": 100,
+     "mt": 48,
+     "images": [
+      {
+       "src": "exhibition-visual-design/venue-wide.jpg",
+       "name": "venue-wide",
+       "alt": "The exhibition hall with photographs on the walls and a bed on a rug in the middle"
+      }
+     ]
     },
     {
      "type": "intro",
@@ -870,46 +889,94 @@
      "mt": 32,
      "images": [
       {
-       "src": "exhibition-visual-design/wall-wide.jpg",
-       "name": "wall-wide",
-       "alt": "Wall graphics in the exhibition space"
+       "src": "exhibition-visual-design/venue-wall.jpg",
+       "name": "venue-wall",
+       "alt": "The exhibition wall with the swimmer poster and a hand-drawn line running across it, above a floor of blue tiles"
       }
      ]
     },
     {
-     "type": "wide",
-     "width": 64,
-     "mt": 56,
+     "type": "mock",
+     "mt": 24,
+     "bg": "#b3d3e2",
+     "aspect": "1184 / 700",
+     "gap": 0,
+     "shadow": true,
      "images": [
       {
-       "src": "exhibition-visual-design/wall-tall.jpg",
-       "name": "wall-tall",
-       "alt": "A tall wall graphic in the exhibition"
+       "src": "exhibition-visual-design/wall-wide.jpg",
+       "name": "wall-wide",
+       "alt": "Wall graphic, wide version: the swimmer and a line running to the title",
+       "w": 80
       }
-     ]
+     ],
+     "sizes": "(min-width: 900px) 960px, 80vw"
+    },
+    {
+     "type": "mock",
+     "mt": 24,
+     "bg": "#b3d3e2",
+     "aspect": "1184 / 780",
+     "gap": 4,
+     "shadow": true,
+     "images": [
+      {
+       "src": "exhibition-visual-design/venue-floor.jpg",
+       "name": "venue-floor",
+       "alt": "Hand-lettered title on the wall above a floor of blue tiles",
+       "w": 30
+      },
+      {
+       "src": "exhibition-visual-design/collage-poster.jpg",
+       "name": "collage-poster",
+       "alt": "Collage poster in pink and blue: a corridor, a swimmer and a list of the exhibition's rooms",
+       "w": 34
+      }
+     ],
+     "sizes": "(min-width: 900px) 420px, 40vw"
     },
     {
      "type": "intro",
      "heading": "Game boards"
     },
     {
-     "type": "row",
+     "type": "mock",
      "mt": 32,
+     "bg": "#b3d3e2",
+     "aspect": "1184 / 460",
+     "gap": 2.5,
+     "shadow": true,
      "images": [
       {
        "src": "exhibition-visual-design/board-01.jpg",
        "name": "board-01",
-       "alt": "Game board 1"
+       "alt": "Game board 1: Looking closely at the everyday",
+       "w": 30
       },
       {
        "src": "exhibition-visual-design/board-03.jpg",
        "name": "board-03",
-       "alt": "Game board 3"
+       "alt": "Game board 3: Travelling in a room of memories",
+       "w": 30
       },
       {
        "src": "exhibition-visual-design/board-explain.jpg",
        "name": "board-explain",
-       "alt": "Game board with instructions"
+       "alt": "Game board with a QR code inviting visitors to leave a message",
+       "w": 30
+      }
+     ],
+     "sizes": "(min-width: 900px) 360px, 30vw"
+    },
+    {
+     "type": "wide",
+     "width": 100,
+     "mt": 24,
+     "images": [
+      {
+       "src": "exhibition-visual-design/venue-prints.jpg",
+       "name": "venue-prints",
+       "alt": "Photographs lit on the exhibition wall"
       }
      ]
     },
@@ -918,35 +985,45 @@
      "heading": "Fortune slips"
     },
     {
-     "type": "row",
+     "type": "mock",
      "mt": 32,
+     "bg": "#b3d3e2",
+     "aspect": "1184 / 460",
+     "gap": 2.5,
+     "shadow": true,
      "images": [
       {
        "src": "exhibition-visual-design/slip-1.jpg",
        "name": "slip-1",
-       "alt": "Fortune slip 1"
+       "alt": "Fortune slip 1",
+       "w": 13
       },
       {
        "src": "exhibition-visual-design/slip-2.jpg",
        "name": "slip-2",
-       "alt": "Fortune slip 2"
+       "alt": "Fortune slip 2",
+       "w": 13
       },
       {
        "src": "exhibition-visual-design/slip-3.jpg",
        "name": "slip-3",
-       "alt": "Fortune slip 3"
+       "alt": "Fortune slip 3",
+       "w": 13
       },
       {
        "src": "exhibition-visual-design/slip-4.jpg",
        "name": "slip-4",
-       "alt": "Fortune slip 4"
+       "alt": "Fortune slip 4",
+       "w": 13
       },
       {
        "src": "exhibition-visual-design/slip-5.jpg",
        "name": "slip-5",
-       "alt": "Fortune slip 5"
+       "alt": "Fortune slip 5",
+       "w": 13
       }
-     ]
+     ],
+     "sizes": "(min-width: 900px) 160px, 14vw"
     }
    ],
    "credits": {
@@ -1158,6 +1235,132 @@
      "type": "intro",
      "heading": "A photograph for every month",
      "text": "February marks the marathon Amnesty Taiwan held for refugees. October celebrates Taiwan's marriage equality, with a photograph from the Pride march in Buenos Aires."
+    },
+    {
+     "type": "intro",
+     "heading": "The pages",
+     "text": "Each month opens with a full-width photograph, a bold shape in the month's colour and a short caption. Underneath sits a plain grid of dates, with a large numeral and a QR code."
+    },
+    {
+     "type": "mock",
+     "mt": 32,
+     "bg": "#17171c",
+     "aspect": "1184 / 580",
+     "gap": 3,
+     "shadow": true,
+     "sizes": "(min-width: 900px) 560px, 46vw",
+     "images": [
+      {
+       "src": "amnesty-calendar/page-jan.jpg",
+       "name": "page-jan",
+       "alt": "January page: two women embracing, beside a red shape with a hanging lamp",
+       "w": 45
+      },
+      {
+       "src": "amnesty-calendar/page-mar.jpg",
+       "name": "page-mar",
+       "alt": "March page: a crowd with flowers at an International Women's Day march",
+       "w": 45
+      }
+     ]
+    },
+    {
+     "type": "mock",
+     "mt": 16,
+     "bg": "#17171c",
+     "aspect": "1184 / 580",
+     "gap": 3,
+     "shadow": true,
+     "sizes": "(min-width: 900px) 560px, 46vw",
+     "images": [
+      {
+       "src": "amnesty-calendar/page-may.jpg",
+       "name": "page-may",
+       "alt": "May page: a mother and child outdoors, with a green shape",
+       "w": 45
+      },
+      {
+       "src": "amnesty-calendar/page-aug.jpg",
+       "name": "page-aug",
+       "alt": "August page: protesters holding hand-painted signs, beside a megaphone shape",
+       "w": 45
+      }
+     ]
+    },
+    {
+     "type": "mock",
+     "mt": 16,
+     "bg": "#17171c",
+     "aspect": "1184 / 580",
+     "gap": 3,
+     "shadow": true,
+     "sizes": "(min-width: 900px) 560px, 46vw",
+     "images": [
+      {
+       "src": "amnesty-calendar/page-nov.jpg",
+       "name": "page-nov",
+       "alt": "November page: people holding sunflowers, on a blue background",
+       "w": 45
+      },
+      {
+       "src": "amnesty-calendar/page-dec.jpg",
+       "name": "page-dec",
+       "alt": "December page: a child writing, with a pencil shape",
+       "w": 45
+      }
+     ]
+    },
+    {
+     "type": "mock",
+     "mt": 32,
+     "bg": "#eceae0",
+     "aspect": "1184 / 420",
+     "gap": 2.5,
+     "shadow": true,
+     "sizes": "(min-width: 900px) 360px, 30vw",
+     "images": [
+      {
+       "src": "amnesty-calendar/page-jan-grid.jpg",
+       "name": "page-jan-grid",
+       "alt": "January date grid with a large numeral",
+       "w": 30
+      },
+      {
+       "src": "amnesty-calendar/page-feb-grid.jpg",
+       "name": "page-feb-grid",
+       "alt": "February date grid with a large numeral",
+       "w": 30
+      },
+      {
+       "src": "amnesty-calendar/page-oct-grid.jpg",
+       "name": "page-oct-grid",
+       "alt": "October date grid with a large numeral",
+       "w": 30
+      }
+     ]
+    },
+    {
+     "type": "mock",
+     "mt": 32,
+     "bg": "#ffe94a",
+     "aspect": "1184 / 580",
+     "gap": 3,
+     "shadow": true,
+     "sizes": "(min-width: 900px) 560px, 46vw",
+     "images": [
+      {
+       "src": "amnesty-calendar/page-cover.jpg",
+       "name": "page-cover",
+       "alt": "Opening page with the year 2025 and the sunburst",
+       "w": 45
+      },
+      {
+       "src": "amnesty-calendar/page-year.jpg",
+       "name": "page-year",
+       "alt": "Year-at-a-glance page with all twelve months",
+       "w": 45
+      }
+     ]
     }
    ],
    "credits": {

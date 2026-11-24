@@ -139,7 +139,8 @@ a.tile:hover .media > img, a.tile:focus-visible .media > img { transform: scale(
 .swatch { display: flex; flex-direction: column; gap: 10px; }
 .swatch .chip { display: block; height: 140px; }
 .swlabel { font-size: 13px; line-height: 1.4; }
-.mock-box { display: flex; align-items: center; justify-content: center; gap: 6.1%; aspect-ratio: 1184 / 640; }
+.mock-box { display: flex; align-items: center; justify-content: center; gap: var(--gap, 6.1%); aspect-ratio: var(--ar, 1184 / 640); }
+.mock-box.shadow .mock-im img { box-shadow: 0 10px 28px rgba(30, 60, 80, .22); }
 .mock-im { display: block; }
 .mock-im img { width: 100%; height: auto; }
 .hero-covers { margin-top: 0; }
