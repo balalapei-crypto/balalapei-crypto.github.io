@@ -377,8 +377,8 @@ class Site:
 
     def project(self, p):
         slug = p["slug"]
-        title = "<br>".join(esc(t) for t in p["title"])
-        small = {"sm": " title-sm", "md": " title-md"}.get(p.get("title_size"), "")
+        title = (" " if p.get("title_size") == "line" else "<br>").join(esc(t) for t in p["title"])
+        small = {"sm": " title-sm", "md": " title-md", "line": " title-line"}.get(p.get("title_size"), "")
         status = '<p class="status">%s</p>' % esc(p["status"]) if p.get("status") else ""
         body = (
             '<div class="backlink"><a href="{PREFIX}./">&larr; All work</a></div>'
@@ -432,6 +432,15 @@ class Site:
                     '<section class="block devices%s" style="margin-top:%dpx"><div class="stage">'
                     '<figure class="laptop"><div class="lid"><div class="lscreen" style="--ar:%s">%s</div><i class="cam"></i></div><div class="lbase"><i></i></div></figure>%s</div></section>') % (
                         "" if ph else " solo", blk.get("mt", 48), lp["aspect"], video_tag(lp, lp["label"]), phone)
+            elif t == "flipcal":
+                pages = ""
+                for k, im in enumerate(blk["images"]):
+                    finfo = make_image(im["src"], slug, im["name"])
+                    tag = self.img_tag(slug, finfo, im["alt"], "(min-width: 900px) 760px, 90vw", eager=(k == 0))
+                    pages += '<div class="fpage" style="z-index:%d"><div class="ffront">%s</div><div class="fback"></div></div>' % (len(blk["images"]) - k, tag)
+                body += ('<section class="block flipcal-block" style="margin-top:%dpx"><div class="flipcal" data-flipcal style="background:%s;--ar:%s">'
+                         '<div class="cal" style="--pa:%s;--cw:%s%%"><div class="fstack">%s</div><i class="rings"></i><div class="base"></div></div></div></section>') % (
+                    blk.get("mt", 32), blk.get("bg", "#e8e5d8"), blk.get("aspect", "1184 / 800"), blk.get("page", "748 / 578"), blk.get("cw", 64), pages)
             elif t == "carousel":
                 slides = ""
                 for k, im in enumerate(blk["images"]):

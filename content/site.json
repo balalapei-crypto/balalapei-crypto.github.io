@@ -1187,20 +1187,13 @@
    "slug": "amnesty-calendar",
    "ready": true,
    "title": [
-    "Amnesty International Taiwan",
-    "2025 Desk Calendar"
+    "Amnesty International Taiwan 2025 Desk Calendar"
    ],
    "card_title": "Amnesty International Taiwan",
    "tag": "Design",
    "meta": "2024 · Desk calendar · Donor appreciation gift",
    "intro": "A 2025 desk calendar made as a thank-you gift for supporters of Amnesty International Taiwan, built on the organisation's signature yellow and a month-by-month selection of human-rights photography.",
    "description": "Amnesty International Taiwan 2025 desk calendar: a donor appreciation gift in the organisation's yellow, pairing each month with human-rights photography.",
-   "hero": {
-    "src": "amnesty-calendar/01-cover.jpg",
-    "name": "01-cover",
-    "alt": "The 2025 desk calendar standing on a wooden table, its cover a radiating yellow sunburst of fine lines",
-    "width": 72
-   },
    "cover": {
     "src": "amnesty-calendar/01-cover.jpg",
     "name": "01-cover",
@@ -1216,20 +1209,79 @@
    ],
    "blocks": [
     {
-     "type": "pair",
-     "mt": 32,
+     "type": "flipcal",
+     "mt": 0,
      "images": [
       {
-       "src": "amnesty-calendar/02-february.jpg",
-       "name": "02-february",
-       "alt": "February page of the calendar with a yellow arch shape above a marathon photograph"
+       "src": "amnesty-calendar/flip-00.jpg",
+       "name": "flip-00",
+       "alt": "Opening page with the year 2025 and a yellow sunburst"
       },
       {
-       "src": "amnesty-calendar/03-october.jpg",
-       "name": "03-october",
-       "alt": "October page of the calendar with a photograph of two people embracing at a Pride march"
+       "src": "amnesty-calendar/flip-01-jan.jpg",
+       "name": "flip-01-jan",
+       "alt": "January page of the 2025 calendar"
+      },
+      {
+       "src": "amnesty-calendar/flip-02-feb.jpg",
+       "name": "flip-02-feb",
+       "alt": "February page of the 2025 calendar"
+      },
+      {
+       "src": "amnesty-calendar/flip-03-mar.jpg",
+       "name": "flip-03-mar",
+       "alt": "March page of the 2025 calendar"
+      },
+      {
+       "src": "amnesty-calendar/flip-04-apr.jpg",
+       "name": "flip-04-apr",
+       "alt": "April page of the 2025 calendar"
+      },
+      {
+       "src": "amnesty-calendar/flip-05-may.jpg",
+       "name": "flip-05-may",
+       "alt": "May page of the 2025 calendar"
+      },
+      {
+       "src": "amnesty-calendar/flip-06-jun.jpg",
+       "name": "flip-06-jun",
+       "alt": "June page of the 2025 calendar"
+      },
+      {
+       "src": "amnesty-calendar/flip-07-jul.jpg",
+       "name": "flip-07-jul",
+       "alt": "July page of the 2025 calendar"
+      },
+      {
+       "src": "amnesty-calendar/flip-08-aug.jpg",
+       "name": "flip-08-aug",
+       "alt": "August page of the 2025 calendar"
+      },
+      {
+       "src": "amnesty-calendar/flip-09-sep.jpg",
+       "name": "flip-09-sep",
+       "alt": "September page of the 2025 calendar"
+      },
+      {
+       "src": "amnesty-calendar/flip-10-oct.jpg",
+       "name": "flip-10-oct",
+       "alt": "October page of the 2025 calendar"
+      },
+      {
+       "src": "amnesty-calendar/flip-11-nov.jpg",
+       "name": "flip-11-nov",
+       "alt": "November page of the 2025 calendar"
+      },
+      {
+       "src": "amnesty-calendar/flip-12-dec.jpg",
+       "name": "flip-12-dec",
+       "alt": "December page of the 2025 calendar"
       }
-     ]
+     ],
+     "cw": 54
+    },
+    {
+     "type": "info"
     },
     {
      "type": "intro",
@@ -1240,75 +1292,6 @@
      "type": "intro",
      "heading": "The pages",
      "text": "Each month opens with a full-width photograph, a bold shape in the month's colour and a short caption. Underneath sits a plain grid of dates, with a large numeral and a QR code."
-    },
-    {
-     "type": "mock",
-     "mt": 32,
-     "bg": "#17171c",
-     "aspect": "1184 / 580",
-     "gap": 3,
-     "shadow": true,
-     "sizes": "(min-width: 900px) 560px, 46vw",
-     "images": [
-      {
-       "src": "amnesty-calendar/page-jan.jpg",
-       "name": "page-jan",
-       "alt": "January page: two women embracing, beside a red shape with a hanging lamp",
-       "w": 45
-      },
-      {
-       "src": "amnesty-calendar/page-mar.jpg",
-       "name": "page-mar",
-       "alt": "March page: a crowd with flowers at an International Women's Day march",
-       "w": 45
-      }
-     ]
-    },
-    {
-     "type": "mock",
-     "mt": 16,
-     "bg": "#17171c",
-     "aspect": "1184 / 580",
-     "gap": 3,
-     "shadow": true,
-     "sizes": "(min-width: 900px) 560px, 46vw",
-     "images": [
-      {
-       "src": "amnesty-calendar/page-may.jpg",
-       "name": "page-may",
-       "alt": "May page: a mother and child outdoors, with a green shape",
-       "w": 45
-      },
-      {
-       "src": "amnesty-calendar/page-aug.jpg",
-       "name": "page-aug",
-       "alt": "August page: protesters holding hand-painted signs, beside a megaphone shape",
-       "w": 45
-      }
-     ]
-    },
-    {
-     "type": "mock",
-     "mt": 16,
-     "bg": "#17171c",
-     "aspect": "1184 / 580",
-     "gap": 3,
-     "shadow": true,
-     "sizes": "(min-width: 900px) 560px, 46vw",
-     "images": [
-      {
-       "src": "amnesty-calendar/page-nov.jpg",
-       "name": "page-nov",
-       "alt": "November page: people holding sunflowers, on a blue background",
-       "w": 45
-      },
-      {
-       "src": "amnesty-calendar/page-dec.jpg",
-       "name": "page-dec",
-       "alt": "December page: a child writing, with a pencil shape",
-       "w": 45
-      }
-     ]
     },
     {
      "type": "mock",
@@ -1384,7 +1367,8 @@
       "2024 (for the 2025 calendar year)"
      ]
     ]
-   }
+   },
+   "title_size": "line"
   },
   {
    "slug": "migrant-voice-ui",

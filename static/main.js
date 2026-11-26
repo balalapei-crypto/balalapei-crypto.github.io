@@ -124,3 +124,34 @@
   }, { threshold: 0.25 });
   Array.prototype.forEach.call(vids, function (v) { io.observe(v); });
 })();
+
+/* Flip calendar: turns a page every 2.4 s, only while it is on screen. */
+(function () {
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  Array.prototype.forEach.call(document.querySelectorAll('[data-flipcal]'), function (el) {
+    var pages = Array.prototype.slice.call(el.querySelectorAll('.fpage'));
+    var i = 0, timer = null;
+    pages.forEach(function (p, k) { p.style.zIndex = pages.length - k; });
+    function step() {
+      if (i < pages.length - 1) {
+        var p = pages[i];
+        p.classList.add('flipped');
+        setTimeout(function () { p.classList.add('gone'); }, 1000);
+        i++;
+      } else {
+        el.classList.add('resetting');
+        setTimeout(function () {
+          pages.forEach(function (p) { p.classList.remove('flipped', 'gone'); });
+          i = 0;
+          requestAnimationFrame(function () { requestAnimationFrame(function () { el.classList.remove('resetting'); }); });
+        }, 450);
+      }
+    }
+    function start() { if (!reduce && !timer) timer = setInterval(step, 2400); }
+    function stop() { clearInterval(timer); timer = null; }
+    if (reduce) return;
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (es) { es[0].isIntersecting ? start() : stop(); }, { threshold: 0.25 }).observe(el);
+    } else { start(); }
+  });
+})();
