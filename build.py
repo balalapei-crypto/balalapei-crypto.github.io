@@ -442,12 +442,14 @@ class Site:
                         " is-current" if k == 0 else "", ' aria-hidden="true"' if k else "", tag))
                 body += ('<section class="block flipcal-block" style="margin-top:%dpx">'
                          '<div class="flipcal" data-flipcal style="--desk:%s;--ar:%s">'
+                         '<div class="cal-set" aria-hidden="true"></div>'
                          '<div class="cal" style="--pa:%s;--cw:%s%%">'
-                         '<div class="cal-rear" aria-hidden="true"></div><div class="cal-side" aria-hidden="true"></div>'
+                         '<div class="cal-shadow" aria-hidden="true"></div>'
+                         '<div class="cal-rear" aria-hidden="true"></div><div class="cal-floor" aria-hidden="true"></div>'
                          '<div class="cal-front" aria-hidden="true"></div><div class="cal-edges" aria-hidden="true"></div>'
                          '<div class="fstack">%s</div><div class="cal-rings" aria-hidden="true">%s</div>'
                          '</div></div></section>') % (
-                    blk.get("mt", 32), blk.get("bg", "#f7f6f1"), blk.get("aspect", "1184 / 890"),
+                    blk.get("mt", 32), blk.get("bg", "#f7f6f1"), blk.get("aspect", "1184 / 940"),
                     blk.get("page", "748 / 578"), blk.get("cw", 49), "".join(pages), "<i></i>" * 22)
             elif t == "carousel":
                 slides = ""

@@ -290,42 +290,92 @@ body.page-dark .site-footer { color: #9a9a9e; }
   --turn-time: 1800ms;
   --front-lean: 22deg;
   --rear-lean: -31deg;
+  --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.37' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .44 0 0 0 0 .30 0 0 0 0 .17 2.45 0 0 0 -1.53'/%3E%3C/filter%3E%3Cpath fill='white' filter='url(%23g)' d='M0 0h180v180H0z'/%3E%3C/svg%3E");
   position: relative;
-  aspect-ratio: var(--ar, 1184 / 890);
+  aspect-ratio: var(--ar, 1184 / 940);
   overflow: hidden;
   isolation: isolate;
-  perspective: clamp(750px, 140vw, 1800px);
-  perspective-origin: 50% 38%;
-  background: radial-gradient(ellipse at 22% 14%, rgba(255,255,255,.68), transparent 72%),
-              linear-gradient(150deg, transparent 33%, rgba(86,73,43,.105)),
-              var(--desk, #f7f6f1);
+  perspective: clamp(650px, 125vw, 1600px);
+  perspective-origin: 50% 45%;
+  background: var(--grain), linear-gradient(155deg, #a79a86 68%, #83796c);
+}
+.flipcal::before,
+.flipcal .cal-set,
+.flipcal .cal-set::after {
+  position: absolute;
+  pointer-events: none;
 }
 .flipcal::before {
   content: "";
-  position: absolute;
-  inset: 73% 8% 1% 14%;
-  pointer-events: none;
-  background: radial-gradient(ellipse closest-side at 56% 61%, rgba(61,48,23,.28), rgba(61,48,23,.105) 56%, transparent);
-  transform: rotate(4deg);
+  inset: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 66% 100%, 0 100%);
+  background: repeating-linear-gradient(162deg, rgba(78,40,15,.18) 0 1px, transparent 1px 3px),
+              linear-gradient(96deg, #8a532a 50%, #a66937);
+}
+.flipcal .cal-set {
+  inset: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 84%, 63% 100%, 0 100%);
+  background: var(--grain),
+              radial-gradient(ellipse at 19% 32%, #fff6e5, transparent 78%),
+              linear-gradient(145deg, var(--desk, #f7f6f1), #ddc7ab);
+}
+.flipcal .cal-set::after {
+  content: "";
+  inset: -8%;
+  background:
+    linear-gradient(119deg, transparent 24%, rgba(86,60,40,.20) 24.4% 26%, transparent 26.5%),
+    linear-gradient(25deg, transparent 17%, rgba(91,64,45,.25) 18% 20%, transparent 21% 31%,
+      rgba(87,61,43,.20) 32% 34%, transparent 35% 56%, rgba(87,61,43,.18) 57% 59%,
+      transparent 60% 76%, rgba(87,61,43,.15) 77% 86%, transparent 87%);
+  filter: blur(clamp(3px, .65vw, 9px));
 }
 .flipcal .cal {
+  --camera-yaw: 23deg;
   position: absolute;
-  top: 37%;
-  left: 49%;
+  top: 35%;
+  left: 51%;
   width: var(--cw, 49%);
   aspect-ratio: var(--pa, 748 / 578);
-  transform: translateX(-50%) rotateY(-19deg);
+  transform: translateX(-50%) rotateZ(-4deg) rotateX(-13deg) rotateY(var(--camera-yaw));
   transform-origin: 50% 0;
   transform-style: preserve-3d;
 }
-.flipcal .cal::before {
+/* The bottom fold bridges the front and rear boards at the desk plane. */
+.flipcal .cal-floor,
+.flipcal .cal-shadow {
+  position: absolute;
+  top: 104%;
+  transform-origin: 50% 0;
+}
+.flipcal .cal-floor {
+  left: -.6%;
+  right: -.6%;
+  height: 104%;
+  transform: rotateX(-90deg) translateY(-40%);
+  background: linear-gradient(180deg, #88601d, #e7b53f 53%, #d0992c 82%, #6e4613);
+}
+.flipcal .cal-shadow {
+  left: -2%;
+  width: 181%;
+  height: 180%;
+  transform: translateY(1px) rotateX(-90deg) translateY(-25%);
+  filter: blur(clamp(3px, .85vw, 11px));
+}
+.flipcal .cal-shadow::before,
+.flipcal .cal-shadow::after {
   content: "";
   position: absolute;
-  inset: 0 -5% -21%;
   pointer-events: none;
-  transform: rotateX(var(--front-lean)) translateZ(-9px);
-  transform-origin: 50% 0;
-  background: radial-gradient(ellipse 49% 6% at 51% 93%, rgba(52,42,20,.44), rgba(52,42,20,.18) 44%, transparent);
+}
+.flipcal .cal-shadow::before {
+  inset: 1% 0 4%;
+  clip-path: polygon(0 47%, 1% 15%, 35% 0, 96% 13%, 83% 61%, 62% 88%, 26% 66%);
+  background: radial-gradient(ellipse at 33% 54%, rgba(66,39,18,.58), rgba(77,51,30,.35) 42%, transparent 87%);
+}
+.flipcal .cal-shadow::after {
+  inset: 0 44% 0 0;
+  background: radial-gradient(ellipse 49% 5% at 50% 3%, rgba(64,37,15,.48), transparent),
+              radial-gradient(ellipse 49% 6% at 50% 59%, rgba(64,37,15,.43), transparent);
 }
 .flipcal .cal-front,
 .flipcal .cal-rear,
@@ -336,24 +386,14 @@ body.page-dark .site-footer { color: #9a9a9e; }
 .flipcal .cal-front {
   inset: 0 -.6% -12% -.6%;
   transform: rotateX(var(--front-lean)) translateZ(-5px);
-  background: linear-gradient(174deg, #f6d94c 76%, #f8da46 90%, #e7c12b);
-  box-shadow: inset 0 -2px rgba(116,79,12,.48);
+  background: linear-gradient(107deg, #d6a529, #f7d34d 30%, #eac039 73%, #c49125);
+  box-shadow: inset 0 1px #ffe485, inset 0 -2px rgba(103,63,14,.55), 0 1px 2px rgba(72,42,16,.33);
 }
 .flipcal .cal-rear {
   inset: 0 -.6% -21% -.6%;
   transform: rotateX(var(--rear-lean));
-  background: linear-gradient(163deg, #dabc42, #9e7421);
-}
-.flipcal .cal-side {
-  position: absolute;
-  top: 0;
-  left: 100.6%;
-  width: 80.6%;
-  height: 104%;
-  clip-path: polygon(40% 0, 100% 100%, 0 100%);
-  background: linear-gradient(145deg, #9c7b29, #b28c2a 54%, #d1ae42 99%);
-  transform: rotateY(90deg) translateX(-40%);
-  transform-origin: 0 0;
+  background: linear-gradient(115deg, #f8d353, #dbad37 20%, #bc8825 75%, #986419);
+  box-shadow: inset 0 -2px rgba(95,57,12,.47);
 }
 .flipcal .cal-edges {
   inset: 0 -.7% -1.15% 0;
@@ -408,8 +448,9 @@ body.page-dark .site-footer { color: #9a9a9e; }
 }
 .flipcal .ffront::before, .flipcal .fback::before {
   inset: 0;
-  background: linear-gradient(180deg, rgba(40,33,20,.13), transparent 10%),
-              linear-gradient(110deg, transparent 31%, rgba(40,33,20,.045));
+  background: linear-gradient(180deg, rgba(48,33,19,.17), transparent 12%),
+              linear-gradient(113deg, rgba(255,235,198,.15), transparent 42%, rgba(82,60,41,.07)),
+              linear-gradient(23deg, transparent 9%, rgba(82,60,41,.09) 16% 20%, transparent 28%);
 }
 .flipcal .ffront::after, .flipcal .fback::after {
   inset: .75% 2.5% auto;
@@ -472,7 +513,7 @@ body.page-dark .site-footer { color: #9a9a9e; }
     animation-timing-function: cubic-bezier(.48,.03,.71,.72);
   }
   52% {
-    transform: rotateX(170deg) scaleY(.62) skewX(-2deg);
+    transform: rotateX(170deg) scaleY(.60) skewX(-2deg);
     animation-timing-function: cubic-bezier(.3,.24,.52,1);
   }
   100% { transform: rotateX(328deg) scaleY(1) skewX(0); }
@@ -486,12 +527,17 @@ body.page-dark .site-footer { color: #9a9a9e; }
   100% { opacity: .42; }
 }
 @media (max-width: 900px) {
-  .flipcal .cal { width: 58%; }
+  .flipcal .cal { width: 57%; }
   .flipcal { aspect-ratio: 1; }
 }
 @media (max-width: 600px) {
-  .flipcal .cal { width: 73%; }
-  .flipcal { aspect-ratio: 5 / 6; }
+  .flipcal .cal {
+    --camera-yaw: 14deg;
+    top: 36%;
+    left: 49%;
+    width: calc(52% + 36px);
+  }
+  .flipcal { aspect-ratio: 4 / 5; }
 }
 @media (prefers-reduced-motion: reduce) {
   .flipcal .fpage.is-turning,
