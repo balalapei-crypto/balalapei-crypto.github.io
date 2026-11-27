@@ -125,33 +125,71 @@
   Array.prototype.forEach.call(vids, function (v) { io.observe(v); });
 })();
 
-/* Flip calendar: turns a page every 2.4 s, only while it is on screen. */
+/* Flip calendar: hold each page, then turn it while the calendar is visible. */
 (function () {
-  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!('IntersectionObserver' in window)) return;
+  var motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  var holdTime = 4000;
+
   Array.prototype.forEach.call(document.querySelectorAll('[data-flipcal]'), function (el) {
-    var pages = Array.prototype.slice.call(el.querySelectorAll('.fpage'));
-    var i = 0, timer = null;
-    pages.forEach(function (p, k) { p.style.zIndex = pages.length - k; });
-    function step() {
-      if (i < pages.length - 1) {
-        var p = pages[i];
-        p.classList.add('flipped');
-        setTimeout(function () { p.classList.add('gone'); }, 1000);
-        i++;
-      } else {
-        el.classList.add('resetting');
-        setTimeout(function () {
-          pages.forEach(function (p) { p.classList.remove('flipped', 'gone'); });
-          i = 0;
-          requestAnimationFrame(function () { requestAnimationFrame(function () { el.classList.remove('resetting'); }); });
-        }, 450);
+    var pages = el.querySelectorAll('.fpage');
+    if (pages.length < 2) return;
+
+    var current = 0, timer = null, incoming = null, onScreen = false;
+
+    function hold() {
+      timer = setTimeout(function () {
+        timer = null;
+        var next = (current + 1) % pages.length;
+        var image = pages[next].querySelector('img');
+        if (!image.complete || !image.naturalWidth) {
+          hold();
+          return;
+        }
+        incoming = next;
+        pages[next].classList.add('is-next');
+        pages[current].classList.add('is-turning');
+      }, holdTime);
+    }
+
+    function sync() {
+      var playing = onScreen && !document.hidden && !motion.matches;
+      el.classList.toggle('is-playing', playing);
+      if (!playing) {
+        clearTimeout(timer);
+        timer = null;
+      } else if (timer === null && incoming === null) {
+        hold();
       }
     }
-    function start() { if (!reduce && !timer) timer = setInterval(step, 2400); }
-    function stop() { clearInterval(timer); timer = null; }
-    if (reduce) return;
-    if ('IntersectionObserver' in window) {
-      new IntersectionObserver(function (es) { es[0].isIntersecting ? start() : stop(); }, { threshold: 0.25 }).observe(el);
-    } else { start(); }
+
+    el.addEventListener('animationend', function (event) {
+      if (event.target !== pages[current] || event.animationName !== 'flipcal-turn' || incoming === null) return;
+      pages[current].classList.remove('is-current', 'is-turning');
+      pages[current].setAttribute('aria-hidden', 'true');
+      current = incoming;
+      incoming = null;
+      pages[current].classList.replace('is-next', 'is-current');
+      pages[current].removeAttribute('aria-hidden');
+      sync();
+    });
+
+    motion.addEventListener('change', function () {
+      if (motion.matches) {
+        pages[current].classList.remove('is-current', 'is-turning');
+        pages[current].setAttribute('aria-hidden', 'true');
+        if (incoming !== null) pages[incoming].classList.remove('is-next');
+        current = 0;
+        incoming = null;
+        pages[0].classList.add('is-current');
+        pages[0].removeAttribute('aria-hidden');
+      }
+      sync();
+    });
+    document.addEventListener('visibilitychange', sync);
+    new IntersectionObserver(function (entries) {
+      onScreen = entries[entries.length - 1].intersectionRatio >= .01;
+      sync();
+    }, { threshold: .01 }).observe(el);
   });
 })();

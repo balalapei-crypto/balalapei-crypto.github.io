@@ -433,14 +433,22 @@ class Site:
                     '<figure class="laptop"><div class="lid"><div class="lscreen" style="--ar:%s">%s</div><i class="cam"></i></div><div class="lbase"><i></i></div></figure>%s</div></section>') % (
                         "" if ph else " solo", blk.get("mt", 48), lp["aspect"], video_tag(lp, lp["label"]), phone)
             elif t == "flipcal":
-                pages = ""
+                pages = []
                 for k, im in enumerate(blk["images"]):
                     finfo = make_image(im["src"], slug, im["name"])
-                    tag = self.img_tag(slug, finfo, im["alt"], "(min-width: 900px) 760px, 90vw", eager=(k == 0))
-                    pages += '<div class="fpage" style="z-index:%d"><div class="ffront">%s</div><div class="fback"></div></div>' % (len(blk["images"]) - k, tag)
-                body += ('<section class="block flipcal-block" style="margin-top:%dpx"><div class="flipcal" data-flipcal style="background:%s;--ar:%s">'
-                         '<div class="cal" style="--pa:%s;--cw:%s%%"><div class="fstack">%s</div><i class="rings"></i><div class="base"></div></div></div></section>') % (
-                    blk.get("mt", 32), blk.get("bg", "#e8e5d8"), blk.get("aspect", "1184 / 800"), blk.get("page", "748 / 578"), blk.get("cw", 64), pages)
+                    tag = self.img_tag(slug, finfo, im["alt"], "(min-width: 900px) 760px, 78vw")
+                    pages.append(('<div class="fpage%s"%s><div class="ffront">%s</div>'
+                                  '<div class="fback" aria-hidden="true"></div></div>') % (
+                        " is-current" if k == 0 else "", ' aria-hidden="true"' if k else "", tag))
+                body += ('<section class="block flipcal-block" style="margin-top:%dpx">'
+                         '<div class="flipcal" data-flipcal style="--desk:%s;--ar:%s">'
+                         '<div class="cal" style="--pa:%s;--cw:%s%%">'
+                         '<div class="cal-rear" aria-hidden="true"></div><div class="cal-side" aria-hidden="true"></div>'
+                         '<div class="cal-front" aria-hidden="true"></div><div class="cal-edges" aria-hidden="true"></div>'
+                         '<div class="fstack">%s</div><div class="cal-rings" aria-hidden="true">%s</div>'
+                         '</div></div></section>') % (
+                    blk.get("mt", 32), blk.get("bg", "#f7f6f1"), blk.get("aspect", "1184 / 890"),
+                    blk.get("page", "748 / 578"), blk.get("cw", 49), "".join(pages), "<i></i>" * 22)
             elif t == "carousel":
                 slides = ""
                 for k, im in enumerate(blk["images"]):
